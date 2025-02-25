@@ -1,0 +1,46 @@
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #8ac6ee 0%, #c2fa95e1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  display: flex;
+  width: 25rem;
+  justify-content: center;
+}
+.tab {
+  background-color: #bbe4ff98;
+}
+.tab:hover {
+  background-color: rgba(240, 248, 255, 0.295);
+  transition: 0.3s;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.janela {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18rem;
+  width: 25rem;
+  padding: 1%;
+  background-color: #ffffff5d;
+  border-radius: 2%;
+  align-items: center;
+}
+.input {
+  display: flex-end;
+  align-items: end;
+}
