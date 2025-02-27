@@ -3,6 +3,7 @@
 const rolaDado = document.querySelector(".Rolar--dado");
 const tab = document.querySelectorAll(".tab");
 const dicePNG = document.querySelector(".dado");
+const historico = document.getElementById("historico");
 
 // Dados
 const dados = {
@@ -13,6 +14,9 @@ const dados = {
   d12: () => Math.trunc(Math.random() * 12) + 1,
   d20: () => Math.trunc(Math.random() * 20) + 1,
 };
+
+//Armazenamento dos Dados
+let rolagens = [];
 
 //Aba Ativa
 function abaAtiva(button) {
@@ -36,10 +40,22 @@ rolaDado.addEventListener("click", function () {
   if (abaAtiva) {
     const tipoDado = abaAtiva.id;
     const resultado = dados[tipoDado]();
+    console.log(tipoDado);
     // dicePNG.src = `dice-${resultado}.png`;
     dicePNG.classList.remove("hidden");
-    console.log(resultado);
+
+    //Adiciona o dado na array do histórico
+    rolagens.push(`${abaAtiva.id}: ${resultado}`);
+    mostrarRolagens();
   } else {
-    dicePNG.textContent = "Selecione um tipo de Dado";
+    // // FAZER UM MODAL PARA A MENSAGEM SE A PESSOA N SELECIONAR O DADO
   }
 });
+
+//Histórico de Rolagens
+
+function mostrarRolagens() {
+  historico.innerHTML = rolagens.join("<br>");
+}
+
+console.log(rolagens);

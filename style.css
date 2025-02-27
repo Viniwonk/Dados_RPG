@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-image: linear-gradient(to top left, #8ac6ee 0%, #c2fa95e1 100%);
+  background-image: linear-gradient(to top left, #8f6902 -45%, #000000e1 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ button {
 }
 /* Mesclagem */
 .janela,
-.historico {
+.Historico {
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -28,26 +28,25 @@ button {
   width: 100%;
   justify-content: center;
 }
-.tab {
+.tab,
+.Rolar--dado {
   width: 100%;
   font-size: 1rem;
-  background-color: #bbe4ff98;
+  background-color: #aa1400;
   transition: transform 0.3s;
 }
-.tab:hover {
-  background-color: rgb(0, 255, 200);
+.tab:hover,
+.Rolar--dado:hover {
+  background-color: rgb(255, 0, 0);
   transform: scale(1.3);
-  text-decoration: none;
-  outline: none;
-  border: none;
-  border-radius: 4%;
+  border-radius: 15%;
 }
 
 /* janela principal do dado */
 .janela {
   height: 18rem;
   width: 25rem;
-  background-color: #ffffff5d;
+  background-color: #bda35b7a;
 }
 .input {
   display: flex;
@@ -61,10 +60,15 @@ button {
 }
 
 /* Histórico */
-.historico {
+.Historico {
+  flex-direction: column-reverse;
+  background-color: white;
+  overflow-y: auto;
+  color: black;
+  font-size: 3rem;
+  display: flex;
   height: 18rem;
   width: 18rem;
-  background-color: white;
 }
 
 .hidden {
