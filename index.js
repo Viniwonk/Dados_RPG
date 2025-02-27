@@ -7,12 +7,12 @@ const historico = document.getElementById("historico");
 
 // Dados
 const dados = {
-  d4: () => Math.trunc(Math.random() * 4) + 1,
-  d6: () => Math.trunc(Math.random() * 6) + 1,
-  d8: () => Math.trunc(Math.random() * 8) + 1,
-  d10: () => Math.trunc(Math.random() * 10) + 1,
-  d12: () => Math.trunc(Math.random() * 12) + 1,
-  d20: () => Math.trunc(Math.random() * 20) + 1,
+  D4: () => Math.trunc(Math.random() * 4) + 1,
+  D6: () => Math.trunc(Math.random() * 6) + 1,
+  D8: () => Math.trunc(Math.random() * 8) + 1,
+  D10: () => Math.trunc(Math.random() * 10) + 1,
+  D12: () => Math.trunc(Math.random() * 12) + 1,
+  D20: () => Math.trunc(Math.random() * 20) + 1,
 };
 
 //Armazenamento dos Dados
