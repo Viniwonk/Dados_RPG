@@ -20,12 +20,12 @@ tab.forEach(function (button) {
 
 // Dados
 const dados = {
-  D4: () => Math.trunc(Math.random() * 4) + 1,
-  D6: () => Math.trunc(Math.random() * 6) + 1,
-  D8: () => Math.trunc(Math.random() * 8) + 1,
-  D10: () => Math.trunc(Math.random() * 10) + 1,
-  D12: () => Math.trunc(Math.random() * 12) + 1,
-  D20: () => Math.trunc(Math.random() * 20) + 1,
+  D4: () => Math.ceil(Math.random() * 4),
+  D6: () => Math.ceil(Math.random() * 6),
+  D8: () => Math.ceil(Math.random() * 8),
+  D10: () => Math.ceil(Math.random() * 10),
+  D12: () => Math.ceil(Math.random() * 12),
+  D20: () => Math.ceil(Math.random() * 20),
 };
 
 //Armazenamento dos Dados
