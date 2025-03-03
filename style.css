@@ -64,6 +64,7 @@ button {
   margin: 5px;
   background-color: #beacca;
   animation: hoverAnimation-reverse 0.1s backwards ease;
+  cursor: pointer;
 }
 .tab {
   height: 3rem;
@@ -71,6 +72,7 @@ button {
   font-size: 1.2rem;
   background-color: #cac4ce;
   animation: hoverAnimation-reverse 0.1s backwards ease;
+  cursor: pointer;
 }
 .tab:hover,
 .Rolar--dado:hover {
@@ -105,7 +107,7 @@ button {
   background: none;
 }
 .Historico::-webkit-scrollbar-thumb {
-  background: #9067c69c;
+  background: #4c49f57c;
 }
 .Historico::-webkit-scrollbar {
   border-radius: 15rem;
