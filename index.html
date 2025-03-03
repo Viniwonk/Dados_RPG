@@ -7,31 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Abas -->
+    <div class="tabs">
+      <button class="tab" id="D4" style="border-top-left-radius: 10px; border-top-right-radius: 10px">D4</button>
+      <button class="tab" id="D6">D6</button>
+      <button class="tab" id="D8">D8</button>
+      <button class="tab" id="D10">D10</button>
+      <button class="tab" id="D12">D12</button>
+      <button class="tab" id="D20" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px">D20</button>
+    </div>
     <!-- Janela Principal -->
     <div class="janela">
-      <!-- Abas -->
-      <div class="tabs">
-        <button class="tab" id="D4">D4</button>
-        <button class="tab" id="D6">D6</button>
-        <button class="tab" id="D8">D8</button>
-        <button class="tab" id="D10">D10</button>
-        <button class="tab" id="D12">D12</button>
-        <button class="tab" id="D20">D20</button>
-      </div>
-
       <!-- Imagem do Dado -->
 
-      <img src="Dados/dice-5.png" alt="Dado" class="dado" />
+      <div class="resultado"></div>
 
       <!-- Input e Botão de Rolagem -->
       <div class="input">
-        <!-- <input placeholder="quantidade de dados" /> -->
         <button class="Rolar--dado">Rolar</button>
       </div>
     </div>
 
     <!-- Histórico -->
-    <div class="Historico" id="historico"></div>
+    <div class="Historico" id="historico" style="overflow-x: hidden"></div>
     <script src="index.js"></script>
   </body>
 </html>

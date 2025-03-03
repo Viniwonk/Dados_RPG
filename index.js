@@ -2,7 +2,7 @@
 // Elementos
 const rolaDado = document.querySelector(".Rolar--dado");
 const tab = document.querySelectorAll(".tab");
-const dicePNG = document.querySelector(".dado");
+const rolada = document.querySelector(".resultado");
 const historico = document.getElementById("historico");
 
 //Aba Ativa
@@ -31,9 +31,6 @@ const dados = {
 //Armazenamento dos Dados
 let rolagens = [];
 
-//Hidden
-dicePNG.classList.add("hidden");
-
 // Rolagem do Dado
 rolaDado.addEventListener("click", function () {
   const abaAtiva = document.querySelector(".tab.active");
@@ -41,11 +38,9 @@ rolaDado.addEventListener("click", function () {
     const tipoDado = abaAtiva.id;
     const resultado = dados[tipoDado]();
     console.log(tipoDado);
-    // dicePNG.src = `dice-${resultado}.png`;
-    dicePNG.classList.remove("hidden");
-
+    rolada.textContent = resultado;
     //Adiciona o dado na array do histórico
-    rolagens.push(`${abaAtiva.id}: ${resultado}`);
+    rolagens.push(`${abaAtiva.id} - ${resultado}`);
     mostrarRolagens();
   } else {
     // // FAZER UM MODAL PARA A MENSAGEM SE A PESSOA N SELECIONAR O DADO
