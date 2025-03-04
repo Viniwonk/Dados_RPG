@@ -1,4 +1,4 @@
-# 🎲 Dado em Casa
+# 🎲 Dados RPG
 
 Um projeto simples e interativo para rolagem de dados de RPG (D4 até D20) com sistema de histórico e uma interface elegante e funcional. Ideal para jogadores que precisam de uma solução rápida e prática para rolar dados no conforto de casa.
 
