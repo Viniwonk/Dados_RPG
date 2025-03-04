@@ -145,6 +145,8 @@ button {
   border-radius: 10px;
   box-shadow: 1px 1px 8px rgb(0, 0, 0);
   z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .overlay {
   position: absolute;
@@ -155,6 +157,8 @@ button {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.2rem);
   z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .close {
   animation: hoverAnimation-reverse 0.1s backwards ease;
@@ -169,6 +173,10 @@ button {
 }
 .close:hover {
   animation: hoverAnimation 0.3s forwards ease;
+}
+.modal.show,
+.overlay.show {
+  opacity: 1;
 }
 
 .hidden {

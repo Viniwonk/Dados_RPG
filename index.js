@@ -12,10 +12,18 @@ const closeModal = document.querySelector(".close");
 function abrirModal() {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  setTimeout(() => {
+    modal.classList.add("show");
+    overlay.classList.add("show");
+  }, 10);
 }
 function fecharModal() {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
+  modal.classList.remove("show");
+  overlay.classList.remove("show");
+  setTimeout(() => {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+  }, 300);
 }
 closeModal.addEventListener("click", fecharModal);
 overlay.addEventListener("click", fecharModal);
