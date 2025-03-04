@@ -1,9 +1,29 @@
 "strict mode";
 // Elementos
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
 const rolaDado = document.querySelector(".Rolar--dado");
 const tab = document.querySelectorAll(".tab");
 const rolada = document.querySelector(".resultado");
 const historico = document.getElementById("historico");
+const closeModal = document.querySelector(".close");
+
+// Janela Modal
+function abrirModal() {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+function fecharModal() {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+}
+closeModal.addEventListener("click", fecharModal);
+overlay.addEventListener("click", fecharModal);
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && !modal.classList.contains("hidden")) {
+    fecharModal();
+  }
+});
 
 //Aba Ativa
 function abaAtiva(button) {
@@ -43,9 +63,12 @@ rolaDado.addEventListener("click", function () {
     rolagens.push(`${abaAtiva.id} - ${resultado}`);
     mostrarRolagens();
   } else {
-    // // FAZER UM MODAL PARA A MENSAGEM SE A PESSOA N SELECIONAR O DADO
+    abrirModal();
   }
 });
+
+// fazer algo para q a pessoa possa adicionar modificadores nos dados +1 ou +10 sei la
+// fazer com q o botão selecionado continue ativo
 
 //Histórico de Rolagens
 function mostrarRolagens() {

@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Modal para seleção do dado  -->
+    <div class="modal hidden">
+      É necessário selecionar um dado.
+      <button class="close">X</button>
+    </div>
+    <div class="overlay hidden"></div>
+
     <!-- Abas -->
     <div class="tabs">
       <button class="tab" id="D4" style="border-top-left-radius: 10px; border-top-right-radius: 10px">D4</button>
@@ -18,8 +25,7 @@
     </div>
     <!-- Janela Principal -->
     <div class="janela">
-      <!-- Imagem do Dado -->
-
+      <!-- Resultado do Dado -->
       <div class="resultado"></div>
 
       <!-- Input e Botão de Rolagem -->
