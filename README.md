@@ -21,7 +21,6 @@ Um projeto simples e interativo para rolagem de dados de RPG (D4 até D20) com s
 
 ## 📚 Melhorias Futuras
 - Adicionar modificadores aos dados (ex: +1, +10, etc.).
-- Tornar a aba do dado selecionado fixa até que outra seja escolhida.
 - Implementar suporte a outras linguagens para maior acessibilidade.
 - Aprimoramento Visual.
 
