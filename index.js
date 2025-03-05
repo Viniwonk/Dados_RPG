@@ -65,7 +65,6 @@ rolaDado.addEventListener("click", function () {
   if (abaAtiva) {
     const tipoDado = abaAtiva.id;
     const resultado = dados[tipoDado]();
-    console.log(tipoDado);
     rolada.textContent = resultado;
     //Adiciona o dado na array do histórico
     rolagens.push(`${abaAtiva.id} - ${resultado}`);
@@ -82,5 +81,3 @@ rolaDado.addEventListener("click", function () {
 function mostrarRolagens() {
   historico.innerHTML = rolagens.join("<br>");
 }
-
-console.log(rolagens);
